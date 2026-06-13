@@ -2,9 +2,11 @@
     --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(0, 0%, 20%);
 
-    --background-dark: hsl(0, 0%, 90%);
-    --background: hsl(0, 0%, 95%);
-    --background-light: hsl(0, 0%, 100%);
+    --background-dark: hsl(43 30% 90%);
+    --background: hsl(43 30% 95%);
+    --background-light: hsl(43 30% 100%);
+
+    --primary: hsl(220 70% 50%);
 
     --border: hsl(0, 0%, 0%);
 
@@ -33,6 +35,11 @@
     overflow: hidden;
 }
 
+::selection {
+    background: var(--primary);
+    color: hsl(0, 0%, 100%);
+}
+
 body {
     margin: 0;
 }
@@ -59,16 +66,19 @@ h3 {
 h1 {
     font-size: 26px;
     font-weight: 800;
+    font-family: 'Manrope', sans-serif;
 }
 
 h2 {
     font-size: 22px;
     font-weight: 700;
+    font-family: 'Manrope', sans-serif;
 }
 
 h3 {
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Manrope', sans-serif;
 }
 
 p {

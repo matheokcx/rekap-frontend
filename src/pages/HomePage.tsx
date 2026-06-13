@@ -1,8 +1,10 @@
+import Navbar from '@/components/UI/Landing/Navbar/Navbar.tsx';
+
 const HomePage = () => {
     return (
-        <main>
-            <h2>Page d'accueil</h2>
-        </main>
+        <>
+            <Navbar />
+        </>
     );
 };
 

@@ -94,7 +94,11 @@ const PricingSection = () => {
                     {plans.map((plan) => (
                         <div
                             key={plan.name.label}
-                            className={plan.highlight ? `${styles.card} ${styles.cardHighlight}` : styles.card}
+                            className={
+                                plan.highlight
+                                    ? `${styles.card} ${styles.cardHighlight}`
+                                    : styles.card
+                            }
                         >
                             {plan.badge && (
                                 <div data-i18n={plan.badge.i18n} className={styles.badge}>
@@ -121,9 +125,15 @@ const PricingSection = () => {
                                     <li
                                         key={feature.i18n}
                                         data-i18n={feature.i18n}
-                                        className={feature.muted ? `${styles.feature} ${styles.featureMuted}` : styles.feature}
+                                        className={
+                                            feature.muted
+                                                ? `${styles.feature} ${styles.featureMuted}`
+                                                : styles.feature
+                                        }
                                     >
-                                        <span className={styles.check}>{feature.muted ? '—' : '✓'}</span>{' '}
+                                        <span className={styles.check}>
+                                            {feature.muted ? '—' : '✓'}
+                                        </span>{' '}
                                         {feature.label}
                                     </li>
                                 ))}
@@ -131,7 +141,11 @@ const PricingSection = () => {
                             <a
                                 href="#waitlist"
                                 data-i18n={plan.cta.i18n}
-                                className={plan.highlight ? `${styles.cta} ${styles.ctaFilled}` : styles.cta}
+                                className={
+                                    plan.highlight
+                                        ? `${styles.cta} ${styles.ctaFilled}`
+                                        : styles.cta
+                                }
                             >
                                 {plan.cta.label}
                             </a>

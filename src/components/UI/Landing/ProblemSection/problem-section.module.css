@@ -1,0 +1,99 @@
+.section {
+    padding: 96px 32px;
+    border-top: 1px solid #e1daca;
+    margin-top: 40px;
+}
+
+.inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.intro {
+    max-width: 720px;
+}
+
+.kicker {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #ff5a36;
+    margin-bottom: 16px;
+}
+
+.heading {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: clamp(32px, 4.4vw, 52px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    color: #16140f;
+}
+
+.subtitle {
+    font-size: 19px;
+    line-height: 1.55;
+    color: #534e43;
+    margin-top: 22px;
+}
+
+.subtitle strong {
+    color: #1a1813;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 52px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #e1daca;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.cardDark {
+    background: #15302a;
+    border: 1px solid #15302a;
+    border-radius: 16px;
+    padding: 28px;
+    color: #eaf0e9;
+}
+
+.icon {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #1a1813;
+    line-height: 1;
+}
+
+.iconAccent {
+    color: #ff7a5c;
+}
+
+.cardTitle {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+    color: #16140f;
+}
+
+.cardTitleLight {
+    color: #fff;
+}
+
+.cardText {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #6b665a;
+}
+
+.cardTextLight {
+    color: #b9c9bc;
+}

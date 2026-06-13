@@ -1,0 +1,48 @@
+.card {
+    background: #fff;
+    border: 1px solid #e1daca;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.cardDark {
+    background: #15302a;
+    border: 1px solid #15302a;
+    border-radius: 16px;
+    padding: 28px;
+    color: #eaf0e9;
+}
+
+.icon {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    color: #1a1813;
+    line-height: 1;
+}
+
+.iconAccent {
+    color: #ff7a5c;
+}
+
+.cardTitle {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 18px 0 8px;
+    color: #16140f;
+}
+
+.cardTitleLight {
+    color: #fff;
+}
+
+.cardText {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #6b665a;
+}
+
+.cardTextLight {
+    color: #b9c9bc;
+}

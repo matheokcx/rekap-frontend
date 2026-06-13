@@ -1,0 +1,50 @@
+.footer {
+    border-top: 1px solid #e1daca;
+    padding: 36px 32px 88px;
+}
+
+.inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 26px;
+    height: 26px;
+    border-radius: 8px;
+    background: #1a1813;
+    color: #ff5a36;
+    display: grid;
+    place-items: center;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.name {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.tag {
+    font-size: 13.5px;
+    color: #9a9486;
+    margin-left: 6px;
+}
+
+.copy {
+    font-size: 13px;
+    color: #9a9486;
+}

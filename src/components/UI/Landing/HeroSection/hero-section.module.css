@@ -1,0 +1,234 @@
+.hero {
+    display: block;
+    padding: 72px 32px 48px;
+}
+
+.inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.04fr 0.96fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    background: #fff;
+    border: 1px solid #e1daca;
+    border-radius: 999px;
+    padding: 7px 15px 7px 9px;
+    margin-bottom: 28px;
+}
+
+.eyebrowBadge {
+    background: #ff5a36;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    padding: 3px 8px;
+    border-radius: 999px;
+}
+
+.eyebrowText {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #4b463b;
+}
+
+.title {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: clamp(40px, 5vw, 66px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    color: #16140f;
+}
+
+.subtitle {
+    font-size: clamp(17px, 1.7vw, 20px);
+    line-height: 1.5;
+    color: #534e43;
+    max-width: 50ch;
+    margin: 24px 0 0;
+}
+
+.waitlist {
+    margin-top: 32px;
+    max-width: 470px;
+}
+
+.micro {
+    font-size: 13px;
+    color: #837c6d;
+}
+
+.visual {
+    position: relative;
+    animation: rk-rise 0.7s ease both;
+}
+
+@keyframes rk-rise {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.taskCard {
+    background: #fff;
+    border: 1px solid #e1daca;
+    border-radius: 16px;
+    padding: 18px 20px;
+    box-shadow: 0 24px 50px -38px rgba(26, 24, 19, 0.5);
+}
+
+.taskHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+}
+
+.taskHeaderLogo {
+    width: 18px;
+    height: 18px;
+    border-radius: 5px;
+    background: #f06a6a;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.taskHeaderLabel {
+    font-size: 11.5px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #9a9486;
+}
+
+.taskList {
+    display: grid;
+    gap: 9px;
+}
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13.5px;
+    color: #6b665a;
+}
+
+.taskCheck {
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    background: #2e7d5b;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+}
+
+.pillRow {
+    display: flex;
+    justify-content: center;
+    margin: -1px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.pill {
+    background: #1a1813;
+    color: #fff;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 999px;
+    box-shadow: 0 10px 22px -10px rgba(26, 24, 19, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pillIcon {
+    color: #ff7a5c;
+}
+
+.impactCard {
+    background: #15302a;
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: 0 30px 60px -40px rgba(21, 48, 42, 0.9);
+    color: #eaf0e9;
+}
+
+.impactHeader {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 12px;
+}
+
+.impactLogo {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    background: #ff5a36;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.impactLabel {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: #8fe0a6;
+}
+
+.impactMeta {
+    margin-left: auto;
+    font-size: 11px;
+    color: #7fa08a;
+}
+
+.impactText {
+    font-size: 15px;
+    line-height: 1.55;
+    color: #eaf0e9;
+}
+
+.captionRow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.captionDot {
+    width: 7px;
+    height: 7px;
+    border-radius: 999px;
+    background: #2e7d5b;
+}
+
+.caption {
+    font-size: 12.5px;
+    color: #837c6d;
+}

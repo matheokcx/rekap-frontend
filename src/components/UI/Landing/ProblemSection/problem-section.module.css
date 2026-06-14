@@ -18,7 +18,7 @@
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.04em;
-    color: #ff5a36;
+    color: var(--primary);
     margin-bottom: 16px;
 }
 
@@ -70,10 +70,6 @@
     font-weight: 600;
     color: #1a1813;
     line-height: 1;
-}
-
-.iconAccent {
-    color: #ff7a5c;
 }
 
 .cardTitle {

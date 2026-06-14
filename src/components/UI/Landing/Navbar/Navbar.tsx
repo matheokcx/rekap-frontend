@@ -1,39 +1,56 @@
+import { useTranslation } from 'react-i18next';
 import styles from './navbar.module.css';
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
+    const currentLanguage = i18n.resolvedLanguage ?? i18n.language;
+
+    const changeLanguage = (language: string) => {
+        void i18n.changeLanguage(language);
+    };
+
     return (
         <header className={styles.headerSection}>
             <div className={styles.headerContent}>
                 <a href="#" className={styles.brand}>
-                    <h3>
+                    <h1>
                         Rekap<span style={{ color: 'var(--primary)' }}>.</span>
-                    </h3>
+                    </h1>
                 </a>
                 <nav className={styles.nav}>
-                    <a href="#probleme" data-i18n="nav.problem" className={styles.navLink}>
-                        Le problème
+                    <a href="#probleme" className={styles.navLink}>
+                        {t('landing.nav.problem')}
                     </a>
-                    <a href="#process" data-i18n="nav.how" className={styles.navLink}>
-                        Comment ça marche
+                    <a href="#process" className={styles.navLink}>
+                        {t('landing.nav.process')}
                     </a>
-                    <a href="#tarifs" data-i18n="nav.pricing" className={styles.navLink}>
-                        Tarifs
+                    <a href="#tarifs" className={styles.navLink}>
+                        {t('landing.nav.pricing')}
                     </a>
                 </nav>
                 <div className={styles.actions}>
                     <div className={styles.langSwitch}>
                         <button
-                            id="lang-fr"
-                            className={`${styles.langButton} ${styles.langButtonActive}`}
+                            type="button"
+                            onClick={() => changeLanguage('fr')}
+                            className={`${styles.langButton} ${
+                                currentLanguage === 'fr' ? styles.langButtonActive : ''
+                            }`}
                         >
                             FR
                         </button>
-                        <button id="lang-en" className={styles.langButton}>
+                        <button
+                            type="button"
+                            onClick={() => changeLanguage('en')}
+                            className={`${styles.langButton} ${
+                                currentLanguage === 'en' ? styles.langButtonActive : ''
+                            }`}
+                        >
                             EN
                         </button>
                     </div>
-                    <a href="#waitlist" data-i18n="nav.cta" className={styles.cta}>
-                        Rejoindre la waitlist
+                    <a href="#waitlist" className={styles.cta}>
+                        {t('landing.joinWaitlist')}
                     </a>
                 </div>
             </div>

@@ -18,7 +18,7 @@
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 0.04em;
-    color: #ff7a5c;
+    color: var(--primary);
     margin-bottom: 16px;
 }
 
@@ -43,31 +43,4 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-top: 56px;
-}
-
-.step {
-    border-top: 2px solid #ff5a36;
-    padding-top: 24px;
-}
-
-.stepNumber {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-size: 15px;
-    font-weight: 800;
-    color: #ff7a5c;
-    letter-spacing: 0.1em;
-}
-
-.stepTitle {
-    font-family: 'Clash Display', sans-serif;
-    font-size: 23px;
-    font-weight: 600;
-    margin: 14px 0 10px;
-    color: #fff;
-}
-
-.stepText {
-    font-size: 15px;
-    line-height: 1.6;
-    color: #ada593;
 }

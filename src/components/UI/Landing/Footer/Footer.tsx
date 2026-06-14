@@ -1,6 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import styles from './footer.module.css';
 
 const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <footer className={styles.footer}>
             <div className={styles.inner}>
@@ -8,13 +11,9 @@ const Footer = () => {
                     <h3>
                         Rekap<span style={{ color: 'var(--primary)' }}>.</span>
                     </h3>
-                    <span data-i18n="foot.tag" className={styles.tag}>
-                        — les updates client, sans la corvée.
-                    </span>
+                    <span className={styles.tag}>{t('landing.footer.tag')}</span>
                 </div>
-                <div data-i18n="foot.copy" className={styles.copy}>
-                    © 2026 Rekap · Conçu pour les agences.
-                </div>
+                <div className={styles.copy}>{t('landing.footer.copy')}</div>
             </div>
         </footer>
     );

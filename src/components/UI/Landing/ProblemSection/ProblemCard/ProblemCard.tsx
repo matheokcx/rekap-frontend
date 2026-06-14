@@ -4,17 +4,15 @@ type ProblemCardProps = {
     icon: string;
     title: string;
     description: string;
-    additionalCss?: string;
+    dark?: boolean;
 };
 
-const ProblemCard = ({ icon, title, description, additionalCss }: ProblemCardProps) => {
+const ProblemCard = ({ icon, title, description, dark }: ProblemCardProps) => {
     return (
-        <div className={`${styles.card} ${additionalCss}`}>
-            <div className={styles.icon}>{icon}</div>
-            <h3 data-i18n="prob.c1t" className={styles.cardTitle}>
-                {title}
-            </h3>
-            <p data-i18n="prob.c1b" className={styles.cardText}>
+        <div className={`${styles.card} ${dark ? styles.cardDark : ''}`}>
+            <div className={`${styles.icon} ${dark ? styles.cardTitleLight : ''}`}>{icon}</div>
+            <h3 className={`${styles.cardTitle} ${dark ? styles.cardTitleLight : ''}`}>{title}</h3>
+            <p className={`${styles.cardText} ${dark ? styles.cardTextLight : ''}`}>
                 {description}
             </p>
         </div>

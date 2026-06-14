@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const MailInput = () => {
+    const { t } = useTranslation();
+
     return (
         <form
             style={{
@@ -14,8 +18,7 @@ const MailInput = () => {
             <input
                 type="email"
                 required
-                data-i18n-ph="hero.ph"
-                placeholder="Votre email pro"
+                placeholder={t('landing.mailPlaceholder')}
                 style={{
                     flex: 1,
                     border: 'none',
@@ -29,11 +32,10 @@ const MailInput = () => {
             />
             <button
                 type="submit"
-                data-i18n="hero.btn"
                 style={{
                     border: 'none',
                     cursor: 'pointer',
-                    background: '#ff5a36',
+                    background: 'var(--primary)',
                     color: '#fff',
                     fontFamily: 'inherit',
                     fontWeight: 600,
@@ -43,7 +45,7 @@ const MailInput = () => {
                     whiteSpace: 'nowrap',
                 }}
             >
-                Rejoindre la waitlist
+                {t('landing.joinWaitlist')}
             </button>
         </form>
     );

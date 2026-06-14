@@ -15,7 +15,9 @@ const PricingSection = () => {
                     <p className={styles.subtitle}>{t('landing.pricing.subtitle')}</p>
                 </div>
                 <div className={styles.grid}>
-                    {plans.map((plan: Plan) => <PlanCard key={plan.name} plan={plan} />)}
+                    {plans.map((plan: Plan) => (
+                        <PlanCard key={plan.name} plan={plan} />
+                    ))}
                 </div>
                 <p className={styles.foot}>{t('landing.pricing.foot')}</p>
             </div>

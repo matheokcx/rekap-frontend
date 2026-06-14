@@ -20,7 +20,7 @@ const ProblemSection = () => {
             description:
                 '« Il ne se passe rien. » Le client questionne le budget, compare, puis part — alors que le travail était bon.',
             icon: '↘',
-            additionalCss: `${styles.cardDark} ${styles.cardText} ${styles.cardTextLight}`,
+            dark: true,
         },
     ];
 
@@ -28,13 +28,11 @@ const ProblemSection = () => {
         <section id="probleme" className={styles.section}>
             <div className={styles.inner}>
                 <div className={styles.intro}>
-                    <div data-i18n="prob.kicker" className={styles.kicker}>
-                        LE PROBLÈME
-                    </div>
-                    <h2 data-i18n="prob.h2" className={styles.heading}>
+                    <div className={styles.kicker}>LE PROBLÈME</div>
+                    <h2 className={styles.heading}>
                         Le vrai risque n'est pas la qualité de votre travail. C'est le silence.
                     </h2>
-                    <p data-i18n="prob.sub" className={styles.subtitle}>
+                    <p className={styles.subtitle}>
                         La rétention d'un client d'agence tient avant tout à la{' '}
                         <strong>communication perçue</strong>. Vous livrez un travail excellent —
                         mais s'il reste invisible, le client finit par se demander à quoi sert son
@@ -44,9 +42,11 @@ const ProblemSection = () => {
                 <div className={styles.grid}>
                     {problems.map((problem) => (
                         <ProblemCard
+                            key={problem.title}
                             title={problem.title}
                             description={problem.description}
                             icon={problem.icon}
+                            dark={problem.dark}
                         />
                     ))}
                 </div>

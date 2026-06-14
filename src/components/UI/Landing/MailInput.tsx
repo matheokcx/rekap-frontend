@@ -14,7 +14,6 @@ const MailInput = () => {
             <input
                 type="email"
                 required
-                data-i18n-ph="hero.ph"
                 placeholder="Votre email pro"
                 style={{
                     flex: 1,
@@ -29,11 +28,10 @@ const MailInput = () => {
             />
             <button
                 type="submit"
-                data-i18n="hero.btn"
                 style={{
                     border: 'none',
                     cursor: 'pointer',
-                    background: '#ff5a36',
+                    background: 'var(--primary)',
                     color: '#fff',
                     fontFamily: 'inherit',
                     fontWeight: 600,

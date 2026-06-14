@@ -1,0 +1,26 @@
+.step {
+    border-top: 2px solid var(--primary);
+    padding-top: 24px;
+}
+
+.stepNumber {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--primary);
+    letter-spacing: 0.1em;
+}
+
+.stepTitle {
+    font-family: 'Clash Display', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    margin: 14px 0 10px;
+    color: #fff;
+}
+
+.stepText {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #ada593;
+}

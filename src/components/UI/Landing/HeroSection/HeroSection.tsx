@@ -6,17 +6,17 @@ const HeroSection = () => {
         <section id="hero-d" className={styles.hero}>
             <div className={styles.inner}>
                 <div>
-                    <h1 data-i18n="hero.h1" className={styles.title}>
+                    <h1 className={styles.title}>
                         Des comptes-rendus client pros, en 2&nbsp;min par semaine.
                     </h1>
-                    <p data-i18n="herod.sub" className={styles.subtitle}>
+                    <p className={styles.subtitle}>
                         Rekap transforme le travail que vous suivez déjà en updates clairs, orientés
                         résultat et à votre image. Vos clients perçoivent la valeur livrée, vous
                         gagnez en fidélisation — et des heures chaque semaine.
                     </p>
                     <div id="wl-d" className={styles.waitlist}>
                         <MailInput />
-                        <p data-i18n="hero.micro" className={styles.micro}>
+                        <p className={styles.micro}>
                             Accès anticipé · FR &amp; EN · Sans carte bancaire
                         </p>
                     </div>
@@ -26,7 +26,7 @@ const HeroSection = () => {
                         <div className={styles.taskHeader}>
                             <span className={styles.taskHeaderLogo}>a</span>
                             <span className={styles.taskHeaderLabel}>
-                                ASANA · <span data-i18n="herob.done">TÂCHES TERMINÉES</span>
+                                ASANA · <span>TÂCHES TERMINÉES</span>
                             </span>
                         </div>
                         <div className={styles.taskList}>
@@ -46,17 +46,15 @@ const HeroSection = () => {
                     <div className={styles.pillRow}>
                         <div className={styles.pill}>
                             <span className={styles.pillIcon}>✦</span>{' '}
-                            <span data-i18n="herod.pill">Rekap traduit en valeur business</span>
+                            <span>Rekap traduit en valeur business</span>
                         </div>
                     </div>
                     <div className={styles.impactCard}>
                         <div className={styles.impactHeader}>
                             <span className={styles.impactLogo}>R</span>
-                            <span data-i18n="mock.s2" className={styles.impactLabel}>
-                                IMPACT BUSINESS
-                            </span>
+                            <span className={styles.impactLabel}>IMPACT BUSINESS</span>
                         </div>
-                        <p data-i18n="herod.out" className={styles.impactText}>
+                        <p className={styles.impactText}>
                             « Nous avons optimisé 8 pages clés pour la recherche et publié 3
                             contenus sur vos mots-clés prioritaires. Premiers signaux positifs :
                             votre trafic organique progresse de 14% ce mois-ci. »
@@ -64,7 +62,7 @@ const HeroSection = () => {
                     </div>
                     <div className={styles.captionRow}>
                         <span className={styles.captionDot}></span>
-                        <span data-i18n="herod.caption" className={styles.caption}>
+                        <span className={styles.caption}>
                             Brouillon prêt en 9 secondes — vous relisez et envoyez en un clic.
                         </span>
                     </div>

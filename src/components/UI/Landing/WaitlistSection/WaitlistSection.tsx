@@ -8,17 +8,17 @@ const WaitlistSection = () => {
                 <div className={styles.banner}>
                     <div className={styles.glow}></div>
                     <div className={styles.content}>
-                        <h2 data-i18n="cta.h2" className={styles.heading}>
+                        <h2 className={styles.heading}>
                             Soyez parmi les premières agences à essayer Rekap.
                         </h2>
-                        <p data-i18n="cta.sub" className={styles.subtitle}>
+                        <p className={styles.subtitle}>
                             On ouvre les accès aux agences pilotes par vagues. Laissez votre email
                             pro — vous serez prévenu en premier, et vous façonnerez le produit avec
                             nous.
                         </p>
                         <div id="wl-final" className={styles.formWrap}>
                             <MailInput />
-                            <p data-i18n="hero.micro" className={styles.micro}>
+                            <p className={styles.micro}>
                                 Accès anticipé · FR &amp; EN · Sans carte bancaire
                             </p>
                         </div>

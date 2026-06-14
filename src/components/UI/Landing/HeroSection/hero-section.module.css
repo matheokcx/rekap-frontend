@@ -101,7 +101,7 @@
     width: 18px;
     height: 18px;
     border-radius: 5px;
-    background: #f06a6a;
+    background: var(--primary);
     display: grid;
     place-items: center;
     color: #fff;
@@ -162,7 +162,7 @@
 }
 
 .pillIcon {
-    color: #ff7a5c;
+    color: var(--primary);
 }
 
 .impactCard {
@@ -184,7 +184,7 @@
     width: 22px;
     height: 22px;
     border-radius: 6px;
-    background: #ff5a36;
+    background: var(--primary);
     color: #fff;
     display: grid;
     place-items: center;

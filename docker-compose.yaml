@@ -1,6 +1,8 @@
 services:
   react-service:
-    build: .
+    build:
+      context: .
+      target: development
     restart: always
     container_name: react-image
     ports:

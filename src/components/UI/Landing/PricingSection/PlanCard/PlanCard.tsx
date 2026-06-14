@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import styles from './plan-card.module.css';
 
 export type Feature = {
@@ -21,6 +22,8 @@ type PlanCardProps = {
 };
 
 const PlanCard = ({ plan }: PlanCardProps) => {
+    const { t } = useTranslation();
+
     return (
         <div
             key={plan.name}
@@ -30,7 +33,9 @@ const PlanCard = ({ plan }: PlanCardProps) => {
             <div className={styles.planName}>{plan.name}</div>
             <div className={styles.priceRow}>
                 <span className={styles.price}>{plan.price}</span>
-                {plan.perMonth && <span className={styles.per}>/mois</span>}
+                {plan.perMonth && (
+                    <span className={styles.per}>{t('landing.pricing.perMonth')}</span>
+                )}
             </div>
             <div className={styles.desc}>{plan.desc}</div>
             <div className={styles.divider}></div>

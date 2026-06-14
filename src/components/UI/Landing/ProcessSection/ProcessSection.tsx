@@ -1,33 +1,23 @@
+import { useTranslation } from 'react-i18next';
 import styles from './process-section.module.css';
 import ProcessStepCard from '@/components/UI/Landing/ProcessSection/ProcessStepCard/ProcessStepCard.tsx';
 
+type StepData = {
+    title: string;
+    text: string;
+};
+
 const ProcessSection = () => {
-    const steps = [
-        {
-            title: 'Connectez votre outil',
-            text: "Reliez Asana en deux clics et choisissez les projets de chaque client. Asana d'abord, ClickUp & monday ensuite.",
-        },
-        {
-            title: 'Rekap rédige le brouillon',
-            text: "À la cadence choisie, l'IA transforme les tâches terminées en récit orienté valeur business — dans votre ton, dans la langue du client.",
-        },
-        {
-            title: 'Relisez & envoyez',
-            text: "Éditez en ligne, validez, envoyez. L'email part à votre image, depuis votre adresse. Chaque update est archivé.",
-        },
-    ];
+    const { t } = useTranslation();
+    const steps = t('landing.process.steps', { returnObjects: true }) as StepData[];
 
     return (
         <section id="process" className={styles.section}>
             <div className={styles.inner}>
                 <div className={styles.intro}>
-                    <div className={styles.kicker}>COMMENT ÇA MARCHE</div>
-                    <h2 className={styles.heading}>
-                        De vos tâches à un update envoyé, en trois temps.
-                    </h2>
-                    <p className={styles.subtitle}>
-                        Vous gardez le contrôle éditorial. Rekap fait le brouillon — vous validez.
-                    </p>
+                    <div className={styles.kicker}>{t('landing.process.kicker')}</div>
+                    <h2 className={styles.heading}>{t('landing.process.heading')}</h2>
+                    <p className={styles.subtitle}>{t('landing.process.subtitle')}</p>
                 </div>
                 <div className={styles.grid}>
                     {steps.map((step, index: number) => (

@@ -1,4 +1,8 @@
+import { useTranslation } from 'react-i18next';
+
 const MailInput = () => {
+    const { t } = useTranslation();
+
     return (
         <form
             style={{
@@ -14,7 +18,7 @@ const MailInput = () => {
             <input
                 type="email"
                 required
-                placeholder="Votre email pro"
+                placeholder={t('landing.mailPlaceholder')}
                 style={{
                     flex: 1,
                     border: 'none',
@@ -41,7 +45,7 @@ const MailInput = () => {
                     whiteSpace: 'nowrap',
                 }}
             >
-                Rejoindre la waitlist
+                {t('landing.joinWaitlist')}
             </button>
         </form>
     );

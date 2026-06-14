@@ -20,5 +20,142 @@
     "light": "Light",
     "dark": "Dark",
     "createdAt": "Created at",
-    "updatedAt": "Updated at"
+    "updatedAt": "Updated at",
+    "landing": {
+        "joinWaitlist": "Join the waitlist",
+        "micro": "Early access · FR & EN · No credit card",
+        "mailPlaceholder": "Your work email",
+        "nav": {
+            "problem": "The problem",
+            "process": "How it works",
+            "pricing": "Pricing"
+        },
+        "hero": {
+            "title": "Professional client recaps, in 2 min a week.",
+            "subtitle": "Rekap turns the work you already track into clear, results-driven updates that match your brand. Your clients see the value delivered, you boost retention — and save hours every week.",
+            "tasksDone": "COMPLETED TASKS",
+            "task1": "update meta descriptions (8)",
+            "task2": "publish blog posts ×3",
+            "task3": "fix internal links / sitemap",
+            "pill": "Rekap translates into business value",
+            "impactLabel": "BUSINESS IMPACT",
+            "impactText": "\"We optimized 8 key pages for search and published 3 pieces of content on your priority keywords. First positive signals: your organic traffic is up 14% this month.\"",
+            "caption": "Draft ready in 9 seconds — you review and send in one click."
+        },
+        "problem": {
+            "kicker": "THE PROBLEM",
+            "heading": "The real risk isn't the quality of your work. It's silence.",
+            "subtitleP1": "An agency client's retention hinges above all on ",
+            "subtitleStrong": "perceived communication",
+            "subtitleP2": ". You deliver excellent work — but if it stays invisible, the client eventually wonders what their budget is for.",
+            "cards": [
+                {
+                    "icon": "⏱",
+                    "title": "Time-consuming",
+                    "description": "One clear recap per client, every week. Multiply by 15 clients: that's a half-day gone."
+                },
+                {
+                    "icon": "⤵",
+                    "title": "Neglected",
+                    "description": "Under pressure, the update gets skipped. A few quiet weeks and the relationship cools without a sound."
+                },
+                {
+                    "icon": "↘",
+                    "title": "Churn",
+                    "description": "\"Nothing's happening.\" The client questions the budget, compares, then leaves — even though the work was good.",
+                    "dark": true
+                }
+            ]
+        },
+        "process": {
+            "kicker": "HOW IT WORKS",
+            "heading": "From your tasks to a sent update, in three steps.",
+            "subtitle": "You keep editorial control. Rekap writes the draft — you approve it.",
+            "steps": [
+                {
+                    "title": "Connect your tool",
+                    "text": "Link Asana in two clicks and pick each client's projects. Asana first, ClickUp & monday next."
+                },
+                {
+                    "title": "Rekap writes the draft",
+                    "text": "At your chosen cadence, the AI turns completed tasks into a business-value narrative — in your tone, in the client's language."
+                },
+                {
+                    "title": "Review & send",
+                    "text": "Edit inline, approve, send. The email goes out in your brand, from your address. Every update is archived."
+                }
+            ]
+        },
+        "pricing": {
+            "kicker": "PRICING",
+            "heading": "Start for free. Go pro when the magic kicks in.",
+            "subtitle": "Test the product for real with the free plan. AI generation and automation unlock from Starter onward.",
+            "perMonth": "/month",
+            "foot": "Client tiers will be refined with pilot agencies. The free → paid split is based on AI and automation.",
+            "plans": [
+                {
+                    "name": "Free",
+                    "price": "€0",
+                    "perMonth": false,
+                    "desc": "Get a feel for the product and picture yourself using it.",
+                    "features": [
+                        { "label": "1 client" },
+                        { "label": "Asana connection" },
+                        { "label": "Manual writing + sending" },
+                        { "label": "AI generation", "muted": true }
+                    ],
+                    "cta": "Start for free"
+                },
+                {
+                    "name": "Starter",
+                    "price": "€10",
+                    "perMonth": true,
+                    "desc": "AI generation, unlocked.",
+                    "features": [
+                        { "label": "Up to 3 clients" },
+                        { "label": "AI-generated updates" },
+                        { "label": "Scheduled sending" },
+                        { "label": "Full branding" }
+                    ],
+                    "cta": "Join the waitlist"
+                },
+                {
+                    "name": "Pro",
+                    "price": "€25",
+                    "perMonth": true,
+                    "desc": "For a growing agency.",
+                    "features": [
+                        { "label": "Up to 15 clients" },
+                        { "label": "Multi-user" },
+                        { "label": "Extended history" },
+                        { "label": "Everything in Starter" }
+                    ],
+                    "cta": "Join the waitlist",
+                    "highlight": true,
+                    "badge": "POPULAR"
+                },
+                {
+                    "name": "Agency",
+                    "price": "€100",
+                    "perMonth": true,
+                    "desc": "No limits, for established studios.",
+                    "features": [
+                        { "label": "Unlimited clients" },
+                        { "label": "Multi-integrations" },
+                        { "label": "Roles & permissions" },
+                        { "label": "Priority support" }
+                    ],
+                    "cta": "Join the waitlist"
+                }
+            ]
+        },
+        "waitlist": {
+            "heading": "Be among the first agencies to try Rekap.",
+            "subtitle": "We open access to pilot agencies in waves. Drop your work email — you'll be notified first, and you'll shape the product with us."
+        },
+        "footer": {
+            "tag": "— client updates, without the chore.",
+            "copy": "© 2026 Rekap · Built for agencies."
+        }
+    }
 }

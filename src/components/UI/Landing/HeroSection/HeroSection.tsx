@@ -1,24 +1,19 @@
+import { useTranslation } from 'react-i18next';
 import styles from './hero-section.module.css';
 import MailInput from '@/components/UI/Landing/MailInput.tsx';
 
 const HeroSection = () => {
+    const { t } = useTranslation();
+
     return (
         <section id="hero-d" className={styles.hero}>
             <div className={styles.inner}>
                 <div>
-                    <h1 className={styles.title}>
-                        Des comptes-rendus client pros, en 2&nbsp;min par semaine.
-                    </h1>
-                    <p className={styles.subtitle}>
-                        Rekap transforme le travail que vous suivez déjà en updates clairs, orientés
-                        résultat et à votre image. Vos clients perçoivent la valeur livrée, vous
-                        gagnez en fidélisation — et des heures chaque semaine.
-                    </p>
+                    <h1 className={styles.title}>{t('landing.hero.title')}</h1>
+                    <p className={styles.subtitle}>{t('landing.hero.subtitle')}</p>
                     <div id="wl-d" className={styles.waitlist}>
                         <MailInput />
-                        <p className={styles.micro}>
-                            Accès anticipé · FR &amp; EN · Sans carte bancaire
-                        </p>
+                        <p className={styles.micro}>{t('landing.micro')}</p>
                     </div>
                 </div>
                 <div className={styles.visual}>
@@ -26,45 +21,42 @@ const HeroSection = () => {
                         <div className={styles.taskHeader}>
                             <span className={styles.taskHeaderLogo}>a</span>
                             <span className={styles.taskHeaderLabel}>
-                                ASANA · <span>TÂCHES TERMINÉES</span>
+                                ASANA · <span>{t('landing.hero.tasksDone')}</span>
                             </span>
                         </div>
                         <div className={styles.taskList}>
                             <div className={styles.taskItem}>
-                                <span className={styles.taskCheck}>✓</span> update meta descriptions
-                                (8)
+                                <span className={styles.taskCheck}>✓</span>{' '}
+                                {t('landing.hero.task1')}
                             </div>
                             <div className={styles.taskItem}>
-                                <span className={styles.taskCheck}>✓</span> publish blog posts ×3
+                                <span className={styles.taskCheck}>✓</span>{' '}
+                                {t('landing.hero.task2')}
                             </div>
                             <div className={styles.taskItem}>
-                                <span className={styles.taskCheck}>✓</span> fix internal links /
-                                sitemap
+                                <span className={styles.taskCheck}>✓</span>{' '}
+                                {t('landing.hero.task3')}
                             </div>
                         </div>
                     </div>
                     <div className={styles.pillRow}>
                         <div className={styles.pill}>
                             <span className={styles.pillIcon}>✦</span>{' '}
-                            <span>Rekap traduit en valeur business</span>
+                            <span>{t('landing.hero.pill')}</span>
                         </div>
                     </div>
                     <div className={styles.impactCard}>
                         <div className={styles.impactHeader}>
                             <span className={styles.impactLogo}>R</span>
-                            <span className={styles.impactLabel}>IMPACT BUSINESS</span>
+                            <span className={styles.impactLabel}>
+                                {t('landing.hero.impactLabel')}
+                            </span>
                         </div>
-                        <p className={styles.impactText}>
-                            « Nous avons optimisé 8 pages clés pour la recherche et publié 3
-                            contenus sur vos mots-clés prioritaires. Premiers signaux positifs :
-                            votre trafic organique progresse de 14% ce mois-ci. »
-                        </p>
+                        <p className={styles.impactText}>{t('landing.hero.impactText')}</p>
                     </div>
                     <div className={styles.captionRow}>
                         <span className={styles.captionDot}></span>
-                        <span className={styles.caption}>
-                            Brouillon prêt en 9 secondes — vous relisez et envoyez en un clic.
-                        </span>
+                        <span className={styles.caption}>{t('landing.hero.caption')}</span>
                     </div>
                 </div>
             </div>

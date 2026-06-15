@@ -1,6 +1,6 @@
 .card {
-    background: #fff;
-    border: 1px solid #e1daca;
+    background: var(--lp-surface);
+    border: 1px solid var(--lp-border);
     border-radius: 18px;
     padding: 26px 22px;
     display: flex;
@@ -8,8 +8,8 @@
 }
 
 .cardHighlight {
-    background: #16140f;
-    border: 1px solid #16140f;
+    background: var(--lp-panel);
+    border: 1px solid var(--lp-panel);
     color: #f1ece0;
     position: relative;
     box-shadow: 0 36px 70px -44px rgba(22, 20, 15, 0.9);
@@ -32,7 +32,7 @@
     font-family: 'Clash Display', sans-serif;
     font-size: 18px;
     font-weight: 600;
-    color: #16140f;
+    color: var(--lp-heading);
 }
 
 .cardHighlight .planName {
@@ -50,7 +50,7 @@
     font-family: 'Clash Display', sans-serif;
     font-size: 38px;
     font-weight: 600;
-    color: #16140f;
+    color: var(--lp-heading);
 }
 
 .cardHighlight .price {
@@ -59,7 +59,7 @@
 
 .per {
     font-size: 14px;
-    color: #837c6d;
+    color: var(--lp-muted);
 }
 
 .cardHighlight .per {
@@ -68,7 +68,7 @@
 
 .desc {
     font-size: 13.5px;
-    color: #837c6d;
+    color: var(--lp-muted);
     min-height: 38px;
 }
 
@@ -78,7 +78,7 @@
 
 .divider {
     height: 1px;
-    background: #ede7da;
+    background: var(--lp-border);
     margin: 18px 0;
 }
 
@@ -91,7 +91,7 @@
     display: grid;
     gap: 11px;
     font-size: 14px;
-    color: #4b463b;
+    color: var(--lp-text);
     flex: 1;
     margin: 0;
     padding: 0;
@@ -107,7 +107,7 @@
 }
 
 .featureMuted {
-    color: #a9a294;
+    color: var(--lp-muted);
 }
 
 .check {
@@ -122,8 +122,8 @@
     margin-top: 22px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid #1a1813;
-    color: #1a1813;
+    border: 1px solid var(--lp-heading);
+    color: var(--lp-heading);
     font-weight: 600;
     font-size: 14px;
     padding: 11px;

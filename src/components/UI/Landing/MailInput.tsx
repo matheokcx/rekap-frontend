@@ -1,10 +1,18 @@
 import { useTranslation } from 'react-i18next';
+import { apiClient } from '@/lib/api.ts';
 
 const MailInput = () => {
     const { t } = useTranslation();
 
+    const addInWaitlist = async (formData: FormData): Promise<void> => {
+        await apiClient.post('add-waitlist', {
+            email: formData.get('email'),
+        });
+    };
+
     return (
         <form
+            action={addInWaitlist}
             style={{
                 display: 'flex',
                 gap: '8px',
@@ -17,6 +25,7 @@ const MailInput = () => {
         >
             <input
                 type="email"
+                name="email"
                 required
                 placeholder={t('landing.mailPlaceholder')}
                 style={{

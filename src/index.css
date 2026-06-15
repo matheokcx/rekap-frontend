@@ -10,6 +10,20 @@
 
     --border: hsl(0, 0%, 0%);
 
+    /* Landing page tokens (light) */
+    --lp-page: hsl(43 30% 95%);
+    --lp-surface: hsl(0, 0%, 100%);
+    --lp-border: #e1daca;
+    --lp-heading: #16140f;
+    --lp-text: #534e43;
+    --lp-text-soft: #6b665a;
+    --lp-muted: #837c6d;
+    --lp-nav: #4b463b;
+    --lp-panel: #16140f;
+    --lp-pill-bg: #1a1813;
+    --lp-pill-text: #ffffff;
+    --lp-switch-track: #e4decf;
+
     --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
     --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
     --mono: ui-monospace, Consolas, monospace;
@@ -145,4 +159,18 @@ hr {
     --background-light: hsl(0, 0%, 20%);
 
     --border: hsl(0, 0%, 100%);
+
+    /* Landing page tokens (dark) */
+    --lp-page: hsl(0, 0%, 7%);
+    --lp-surface: hsl(0, 0%, 12%);
+    --lp-border: hsl(0, 0%, 24%);
+    --lp-heading: hsl(0, 0%, 100%);
+    --lp-text: hsl(0, 0%, 82%);
+    --lp-text-soft: hsl(0, 0%, 74%);
+    --lp-muted: hsl(0, 0%, 60%);
+    --lp-nav: hsl(0, 0%, 80%);
+    --lp-panel: hsl(0, 0%, 13%);
+    --lp-pill-bg: hsl(0, 0%, 95%);
+    --lp-pill-text: hsl(0, 0%, 8%);
+    --lp-switch-track: hsl(0, 0%, 20%);
 }

@@ -56,3 +56,18 @@
     color: #87998b;
     margin-top: 14px;
 }
+
+@media (max-width: 640px) {
+    .section {
+        padding: 32px 20px 72px;
+    }
+
+    .banner {
+        padding: clamp(36px, 8vw, 60px) 22px;
+        border-radius: 22px;
+    }
+
+    .formWrap {
+        max-width: 100%;
+    }
+}

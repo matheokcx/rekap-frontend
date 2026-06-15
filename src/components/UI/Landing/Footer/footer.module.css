@@ -1,5 +1,5 @@
 .footer {
-    border-top: 1px solid #e1daca;
+    border-top: 1px solid var(--lp-border);
     padding: 36px 32px 88px;
 }
 
@@ -40,11 +40,17 @@
 
 .tag {
     font-size: 13.5px;
-    color: #9a9486;
+    color: var(--lp-muted);
     margin-left: 6px;
 }
 
 .copy {
     font-size: 13px;
-    color: #9a9486;
+    color: var(--lp-muted);
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 28px 20px 64px;
+    }
 }

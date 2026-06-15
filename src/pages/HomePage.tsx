@@ -5,10 +5,11 @@ import ProcessSection from '@/components/UI/Landing/ProcessSection/ProcessSectio
 import PricingSection from '@/components/UI/Landing/PricingSection/PricingSection.tsx';
 import WaitlistSection from '@/components/UI/Landing/WaitlistSection/WaitlistSection.tsx';
 import Footer from '@/components/UI/Landing/Footer/Footer.tsx';
+import styles from './home-page.module.css';
 
 const HomePage = () => {
     return (
-        <>
+        <div className={styles.page}>
             <Navbar />
             <HeroSection />
             <ProblemSection />
@@ -16,7 +17,7 @@ const HomePage = () => {
             <PricingSection />
             <WaitlistSection />
             <Footer />
-        </>
+        </div>
     );
 };
 

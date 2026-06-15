@@ -4,7 +4,7 @@
     z-index: 50;
     background: var(--background);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid #e1daca;
+    border-bottom: 1px solid var(--lp-border);
 }
 
 .headerContent {
@@ -21,7 +21,7 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: #1a1813;
+    color: var(--lp-heading);
 }
 
 .nav {
@@ -33,7 +33,7 @@
 .navLink {
     position: relative;
     text-decoration: none;
-    color: #4b463b;
+    color: var(--lp-nav);
     font-size: 15px;
     font-weight: 500;
     transition: color 0.25s ease;
@@ -57,7 +57,7 @@
 }
 
 .navLink:hover {
-    color: #1a1813;
+    color: var(--lp-heading);
 }
 
 .navLink:hover::after {
@@ -71,10 +71,36 @@
     gap: 14px;
 }
 
+.themeToggle {
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid var(--lp-border);
+    border-radius: 999px;
+    background: var(--lp-switch-track);
+    color: var(--lp-nav);
+    cursor: pointer;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.themeToggle:hover {
+    color: var(--lp-heading);
+    transform: translateY(-1px);
+}
+
+.themeToggle svg {
+    width: 18px;
+    height: 18px;
+}
+
 .langSwitch {
     display: flex;
     align-items: center;
-    background: #e4decf;
+    background: var(--lp-switch-track);
     border-radius: 999px;
     padding: 3px;
 }
@@ -83,7 +109,7 @@
     border: none;
     cursor: pointer;
     background: transparent;
-    color: #4b463b;
+    color: var(--lp-nav);
     font-family: inherit;
     font-weight: 600;
     font-size: 13px;
@@ -92,17 +118,45 @@
 }
 
 .langButtonActive {
-    background: #1a1813;
-    color: #fff;
+    background: var(--lp-pill-bg);
+    color: var(--lp-pill-text);
 }
 
 .cta {
     text-decoration: none;
-    background: #1a1813;
-    color: #fff;
+    background: var(--lp-pill-bg);
+    color: var(--lp-pill-text);
     font-weight: 600;
     font-size: 14px;
     padding: 11px 18px;
     border-radius: 11px;
     white-space: nowrap;
+}
+
+@media (max-width: 860px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .headerContent {
+        padding: 14px 18px;
+        gap: 14px;
+    }
+
+    .actions {
+        gap: 10px;
+    }
+
+    .cta {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 420px) {
+    .cta {
+        display: none;
+    }
 }

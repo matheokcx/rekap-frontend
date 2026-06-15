@@ -8,8 +8,8 @@ const MailInput = () => {
             style={{
                 display: 'flex',
                 gap: '8px',
-                background: '#fff',
-                border: '1px solid #ddd6c6',
+                background: 'var(--lp-surface)',
+                border: '1px solid var(--lp-border)',
                 borderRadius: '14px',
                 padding: '7px',
                 boxShadow: '0 10px 30px -18px rgba(26, 24, 19, 0.4)',
@@ -21,12 +21,13 @@ const MailInput = () => {
                 placeholder={t('landing.mailPlaceholder')}
                 style={{
                     flex: 1,
+                    minWidth: 0,
                     border: 'none',
                     outline: 'none',
                     background: 'transparent',
                     fontFamily: 'inherit',
                     fontSize: '15.5px',
-                    color: '#1a1813',
+                    color: 'var(--lp-heading)',
                     padding: '10px 12px',
                 }}
             />

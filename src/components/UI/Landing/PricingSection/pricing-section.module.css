@@ -28,19 +28,19 @@
     font-size: clamp(32px, 4.4vw, 52px);
     line-height: 1.05;
     letter-spacing: -0.02em;
-    color: #16140f;
+    color: var(--lp-heading);
 }
 
 .subtitle {
     font-size: 18px;
     line-height: 1.55;
-    color: #534e43;
+    color: var(--lp-text);
     margin-top: 18px;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
     gap: 16px;
     margin-top: 52px;
     align-items: stretch;
@@ -49,6 +49,16 @@
 .foot {
     text-align: center;
     font-size: 13.5px;
-    color: #837c6d;
+    color: var(--lp-muted);
     margin-top: 24px;
+}
+
+@media (max-width: 640px) {
+    .section {
+        padding: 64px 20px;
+    }
+
+    .grid {
+        margin-top: 36px;
+    }
 }

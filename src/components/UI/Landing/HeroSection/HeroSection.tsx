@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import styles from './hero-section.module.css';
-import MailInput from '@/components/UI/Landing/MailInput.tsx';
+import MailInput from '@/components/UI/Landing/MailInput/MailInput.tsx';
 
 const HeroSection = () => {
     const { t } = useTranslation();
@@ -14,6 +14,7 @@ const HeroSection = () => {
                     <div id="wl-d" className={styles.waitlist}>
                         <MailInput />
                         <p className={styles.micro}>{t('landing.micro')}</p>
+                        <p className={styles.trust}>{t('landing.hero.trust')}</p>
                     </div>
                 </div>
                 <div className={styles.visual}>

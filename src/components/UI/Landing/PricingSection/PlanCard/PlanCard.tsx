@@ -49,7 +49,7 @@ const PlanCard = ({ plan }: PlanCardProps) => {
                                 : styles.feature
                         }
                     >
-                        <span className={styles.check}>{feature.muted ? '—' : '✓'}</span>{' '}
+                        <span className={styles.check}>{feature.muted ? '-' : '✓'}</span>{' '}
                         {feature.label}
                     </li>
                 ))}

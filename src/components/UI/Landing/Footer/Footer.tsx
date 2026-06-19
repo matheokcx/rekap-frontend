@@ -8,9 +8,9 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.inner}>
                 <div className={styles.brand}>
-                    <h3>
+                    <span className={styles.brandName}>
                         Rekap<span style={{ color: 'var(--primary)' }}>.</span>
-                    </h3>
+                    </span>
                     <span className={styles.tag}>{t('landing.footer.tag')}</span>
                 </div>
                 <div className={styles.copy}>{t('landing.footer.copy')}</div>

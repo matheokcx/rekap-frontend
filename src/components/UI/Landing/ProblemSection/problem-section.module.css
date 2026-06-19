@@ -1,6 +1,6 @@
 .section {
     padding: 96px 32px;
-    border-top: 1px solid var(--lp-border);
+    border-top: 1px solid var(--border-subtle);
     margin-top: 40px;
 }
 
@@ -28,18 +28,18 @@
     font-size: clamp(32px, 4.4vw, 52px);
     line-height: 1.05;
     letter-spacing: -0.02em;
-    color: var(--lp-heading);
+    color: var(--title-color);
 }
 
 .subtitle {
     font-size: 19px;
     line-height: 1.55;
-    color: var(--lp-text);
+    color: var(--text-color);
     margin-top: 22px;
 }
 
 .subtitle strong {
-    color: var(--lp-heading);
+    color: var(--title-color);
 }
 
 .grid {
@@ -50,8 +50,8 @@
 }
 
 .card {
-    background: var(--lp-surface);
-    border: 1px solid var(--lp-border);
+    background: var(--background-light);
+    border: 1px solid var(--border-subtle);
     border-radius: 16px;
     padding: 28px;
 }
@@ -68,7 +68,7 @@
     font-family: 'Clash Display', sans-serif;
     font-size: 40px;
     font-weight: 600;
-    color: var(--lp-heading);
+    color: var(--title-color);
     line-height: 1;
 }
 
@@ -77,7 +77,7 @@
     font-size: 20px;
     font-weight: 600;
     margin: 18px 0 8px;
-    color: var(--lp-heading);
+    color: var(--title-color);
 }
 
 .cardTitleLight {
@@ -87,7 +87,7 @@
 .cardText {
     font-size: 15px;
     line-height: 1.55;
-    color: var(--lp-text-soft);
+    color: var(--text-soft);
 }
 
 .cardTextLight {

@@ -19,7 +19,7 @@
 .glow {
     position: absolute;
     inset: 0;
-    background: radial-gradient(120% 80% at 50% -10%, rgba(255, 90, 54, 0.18), transparent 60%);
+    background: radial-gradient(120% 80% at 50% -10%, rgba(42, 111, 219, 0.22), transparent 60%);
     pointer-events: none;
 }
 

@@ -32,6 +32,23 @@
     margin-left: 6px;
 }
 
+.legal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+}
+
+.legalLink {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+}
+
+.legalLink:hover {
+    color: var(--primary);
+}
+
 .copy {
     font-size: 13px;
     color: var(--text-muted);

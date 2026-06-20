@@ -1,6 +1,6 @@
 .card {
-    background: var(--lp-surface);
-    border: 1px solid var(--lp-border);
+    background: var(--background-light);
+    border: 1px solid var(--border-subtle);
     border-radius: 16px;
     padding: 28px;
 }
@@ -17,12 +17,8 @@
     font-family: 'Clash Display', sans-serif;
     font-size: 40px;
     font-weight: 600;
-    color: var(--lp-heading);
+    color: var(--title-color);
     line-height: 1;
-}
-
-.iconAccent {
-    color: #ff7a5c;
 }
 
 .cardTitle {
@@ -30,7 +26,7 @@
     font-size: 20px;
     font-weight: 600;
     margin: 18px 0 8px;
-    color: var(--lp-heading);
+    color: var(--title-color);
 }
 
 .cardTitleLight {
@@ -40,7 +36,7 @@
 .cardText {
     font-size: 15px;
     line-height: 1.55;
-    color: var(--lp-text-soft);
+    color: var(--text-soft);
 }
 
 .cardTextLight {

@@ -1,0 +1,65 @@
+.form {
+    display: flex;
+    gap: 8px;
+    background: var(--background-light);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    padding: 7px;
+    box-shadow: 0 10px 30px -18px rgba(26, 24, 19, 0.4);
+}
+
+.input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 15.5px;
+    color: var(--title-color);
+    padding: 10px 12px;
+    border-radius: 10px;
+}
+
+.input::placeholder {
+    color: var(--text-muted);
+}
+
+.input:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    background: var(--primary);
+    color: #fff;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition:
+        background 0.2s ease,
+        transform 0.1s ease,
+        opacity 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+    background: #2360c2;
+}
+
+.button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+.button:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

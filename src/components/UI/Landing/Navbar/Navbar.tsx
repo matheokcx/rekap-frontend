@@ -14,10 +14,10 @@ const Navbar = () => {
     return (
         <header className={styles.headerSection}>
             <div className={styles.headerContent}>
-                <a href="#" className={styles.brand}>
-                    <h1>
+                <a href="#" className={styles.brand} aria-label="Rekap">
+                    <span className={styles.brandName}>
                         Rekap<span style={{ color: 'var(--primary)' }}>.</span>
-                    </h1>
+                    </span>
                 </a>
                 <nav className={styles.nav}>
                     <a href="#probleme" className={styles.navLink}>

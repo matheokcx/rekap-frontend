@@ -23,36 +23,41 @@
     "updatedAt": "Mis à jour le",
     "landing": {
         "joinWaitlist": "Rejoindre la waitlist",
-        "micro": "Accès anticipé · FR & EN · Sans carte bancaire",
+        "micro": "Accès anticipé - Français et anglais",
         "mailPlaceholder": "Votre email pro",
+        "waitlistSuccess": "Merci ! On vous écrit dès l'ouverture des accès.",
+        "waitlistError": "Oups, l'inscription a échoué. Réessayez dans un instant.",
+        "sending": "Envoi…",
         "nav": {
             "problem": "Le problème",
             "process": "Comment ça marche",
             "pricing": "Tarifs"
         },
         "hero": {
-            "title": "Des comptes-rendus client pros, en 2 min par semaine.",
-            "subtitle": "Rekap transforme le travail que vous suivez déjà en updates clairs, orientés résultat et à votre image. Vos clients perçoivent la valeur livrée, vous gagnez en fidélisation — et des heures chaque semaine.",
+            "eyebrow": "Pour les agences marketing & créa",
+            "trust": "Connecté à Asana - ClickUp & Monday bientôt",
+            "title": "Vos clients voient enfin tout ce que vous livrez.",
+            "subtitle": "Rekap transforme votre travail Asana en updates clairs et orientés résultat, à votre image. Vos clients perçoivent la valeur livrée, vous fidélisez et vous récupérez des heures chaque semaine.",
             "tasksDone": "TÂCHES TERMINÉES",
             "task1": "update meta descriptions (8)",
             "task2": "publish blog posts ×3",
             "task3": "fix internal links / sitemap",
             "pill": "Rekap traduit en valeur business",
             "impactLabel": "IMPACT BUSINESS",
-            "impactText": "« Nous avons optimisé 8 pages clés pour la recherche et publié 3 contenus sur vos mots-clés prioritaires. Premiers signaux positifs : votre trafic organique progresse de 14% ce mois-ci. »",
-            "caption": "Brouillon prêt en 9 secondes — vous relisez et envoyez en un clic."
+            "impactText": "« Nous avons optimisé 8 pages clés pour la recherche et publié 3 contenus sur vos mots-clés prioritaires. Premiers signaux positifs: votre trafic organique progresse de 14% ce mois-ci. »",
+            "caption": "Brouillon prêt en 9 secondes - vous relisez et envoyez en un clic."
         },
         "problem": {
             "kicker": "LE PROBLÈME",
             "heading": "Le vrai risque n'est pas la qualité de votre travail. C'est le silence.",
             "subtitleP1": "La rétention d'un client d'agence tient avant tout à la ",
             "subtitleStrong": "communication perçue",
-            "subtitleP2": ". Vous livrez un travail excellent — mais s'il reste invisible, le client finit par se demander à quoi sert son budget.",
+            "subtitleP2": ". Vous livrez un travail excellent - mais s'il reste invisible, le client finit par se demander à quoi sert son budget.",
             "cards": [
                 {
                     "icon": "⏱",
                     "title": "Chronophage",
-                    "description": "Un compte-rendu clair par client, chaque semaine. Multipliez par 15 clients : c'est une demi-journée qui disparaît."
+                    "description": "Un update clair par client, chaque semaine. Multipliez par 15 clients: c'est une demi-journée qui disparaît."
                 },
                 {
                     "icon": "⤵",
@@ -61,8 +66,8 @@
                 },
                 {
                     "icon": "↘",
-                    "title": "Churn",
-                    "description": "« Il ne se passe rien. » Le client questionne le budget, compare, puis part — alors que le travail était bon.",
+                    "title": "Rupture",
+                    "description": "« Il ne se passe rien. » Le client questionne le budget, compare, puis part - alors que le travail était bon.",
                     "dark": true
                 }
             ]
@@ -70,7 +75,7 @@
         "process": {
             "kicker": "COMMENT ÇA MARCHE",
             "heading": "De vos tâches à un update envoyé, en trois temps.",
-            "subtitle": "Vous gardez le contrôle éditorial. Rekap fait le brouillon — vous validez.",
+            "subtitle": "Vous gardez le contrôle éditorial. Rekap fait le brouillon - vous validez.",
             "steps": [
                 {
                     "title": "Connectez votre outil",
@@ -78,7 +83,7 @@
                 },
                 {
                     "title": "Rekap rédige le brouillon",
-                    "text": "À la cadence choisie, l'IA transforme les tâches terminées en récit orienté valeur business — dans votre ton, dans la langue du client."
+                    "text": "À la cadence choisie, l'IA transforme les tâches terminées en récit orienté valeur business - dans votre ton, dans la langue du client."
                 },
                 {
                     "title": "Relisez & envoyez",
@@ -88,23 +93,23 @@
         },
         "pricing": {
             "kicker": "TARIFS",
-            "heading": "Commencez gratuitement. Passez au pro quand la magie opère.",
+            "heading": "Commencez gratuitement. Passez à la vitesse supérieure quand vous êtes prêt.",
             "subtitle": "Testez le produit en réel avec le plan gratuit. La génération IA et l'automatisation se débloquent dès Starter.",
             "perMonth": "/mois",
-            "foot": "Les paliers de clients seront affinés avec les agences pilotes. Le découpage gratuit → payant se fait sur l'IA et l'automatisation.",
+            "foot": "Tarifs founding members, susceptibles d'évoluer après la phase pilote. Le plan gratuit couvre l'envoi manuel ; l'IA et l'automatisation démarrent dès Starter.",
             "plans": [
                 {
                     "name": "Free",
                     "price": "0€",
                     "perMonth": false,
-                    "desc": "Touchez le produit et projetez-vous.",
+                    "desc": "Prenez le produit en main.",
                     "features": [
                         { "label": "1 client" },
                         { "label": "Connexion Asana" },
                         { "label": "Rédaction manuelle + envoi" },
                         { "label": "Génération IA", "muted": true }
                     ],
-                    "cta": "Commencer gratuitement"
+                    "cta": "Rejoindre la waitlist"
                 },
                 {
                     "name": "Starter",
@@ -132,7 +137,7 @@
                     ],
                     "cta": "Rejoindre la waitlist",
                     "highlight": true,
-                    "badge": "POPULAIRE"
+                    "badge": "RECOMMANDÉ"
                 },
                 {
                     "name": "Agency",
@@ -151,10 +156,10 @@
         },
         "waitlist": {
             "heading": "Soyez parmi les premières agences à essayer Rekap.",
-            "subtitle": "On ouvre les accès aux agences pilotes par vagues. Laissez votre email pro — vous serez prévenu en premier, et vous façonnerez le produit avec nous."
+            "subtitle": "On ouvre les accès aux agences pilotes par vagues. Laissez votre email pro - vous serez prévenu en premier, et vous façonnerez le produit avec nous."
         },
         "footer": {
-            "tag": "— les updates client, sans la corvée.",
+            "tag": "Les updates client, sans la corvée.",
             "copy": "© 2026 Rekap · Conçu pour les agences."
         }
     }

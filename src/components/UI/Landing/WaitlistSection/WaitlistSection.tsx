@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import styles from './waitlist-section.module.css';
-import MailInput from '@/components/UI/Landing/MailInput.tsx';
+import MailInput from '@/components/UI/Landing/MailInput/MailInput.tsx';
 
 const WaitlistSection = () => {
     const { t } = useTranslation();

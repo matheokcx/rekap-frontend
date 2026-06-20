@@ -4,7 +4,7 @@
     z-index: 50;
     background: var(--background);
     backdrop-filter: blur(14px);
-    border-bottom: 1px solid var(--lp-border);
+    border-bottom: 1px solid var(--border-subtle);
 }
 
 .headerContent {
@@ -21,7 +21,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--lp-heading);
+    color: var(--title-color);
+}
+
+.brandName {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600;
+    font-size: 21px;
+    letter-spacing: -0.02em;
+    color: var(--title-color);
 }
 
 .nav {
@@ -33,7 +41,7 @@
 .navLink {
     position: relative;
     text-decoration: none;
-    color: var(--lp-nav);
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
     transition: color 0.25s ease;
@@ -57,7 +65,7 @@
 }
 
 .navLink:hover {
-    color: var(--lp-heading);
+    color: var(--title-color);
 }
 
 .navLink:hover::after {
@@ -77,10 +85,10 @@
     width: 38px;
     height: 38px;
     padding: 0;
-    border: 1px solid var(--lp-border);
+    border: 1px solid var(--border-subtle);
     border-radius: 999px;
-    background: var(--lp-switch-track);
-    color: var(--lp-nav);
+    background: var(--switch-track);
+    color: var(--text-color);
     cursor: pointer;
     transition:
         color 0.2s ease,
@@ -88,7 +96,7 @@
 }
 
 .themeToggle:hover {
-    color: var(--lp-heading);
+    color: var(--title-color);
     transform: translateY(-1px);
 }
 
@@ -100,7 +108,7 @@
 .langSwitch {
     display: flex;
     align-items: center;
-    background: var(--lp-switch-track);
+    background: var(--switch-track);
     border-radius: 999px;
     padding: 3px;
 }
@@ -109,7 +117,7 @@
     border: none;
     cursor: pointer;
     background: transparent;
-    color: var(--lp-nav);
+    color: var(--text-color);
     font-family: inherit;
     font-weight: 600;
     font-size: 13px;
@@ -118,14 +126,14 @@
 }
 
 .langButtonActive {
-    background: var(--lp-pill-bg);
-    color: var(--lp-pill-text);
+    background: var(--pill-bg);
+    color: var(--pill-text);
 }
 
 .cta {
     text-decoration: none;
-    background: var(--lp-pill-bg);
-    color: var(--lp-pill-text);
+    background: var(--pill-bg);
+    color: var(--pill-text);
     font-weight: 600;
     font-size: 14px;
     padding: 11px 18px;

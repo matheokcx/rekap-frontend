@@ -1,5 +1,5 @@
 .footer {
-    border-top: 1px solid var(--lp-border);
+    border-top: 1px solid var(--border-subtle);
     padding: 36px 32px 88px;
 }
 
@@ -19,34 +19,39 @@
     gap: 10px;
 }
 
-.logo {
-    width: 26px;
-    height: 26px;
-    border-radius: 8px;
-    background: #1a1813;
-    color: #ff5a36;
-    display: grid;
-    place-items: center;
-    font-family: 'Cabinet Grotesk', sans-serif;
-    font-weight: 800;
-    font-size: 15px;
-}
-
-.name {
+.brandName {
     font-family: 'Clash Display', sans-serif;
     font-weight: 600;
     font-size: 17px;
+    color: var(--title-color);
 }
 
 .tag {
     font-size: 13.5px;
-    color: var(--lp-muted);
+    color: var(--text-muted);
     margin-left: 6px;
+}
+
+.legal {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+}
+
+.legalLink {
+    font-size: 13px;
+    color: var(--text-muted);
+    transition: color 0.15s ease;
+}
+
+.legalLink:hover {
+    color: var(--primary);
 }
 
 .copy {
     font-size: 13px;
-    color: var(--lp-muted);
+    color: var(--text-muted);
 }
 
 @media (max-width: 640px) {
